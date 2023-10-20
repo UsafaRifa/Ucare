@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "693906359257",
+    "firebase_url": "https://ucare-ca826-default-rtdb.firebaseio.com",
+    "project_id": "ucare-ca826",
+    "storage_bucket": "ucare-ca826.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693906359257:android:b62f70da4702f4c5848fc8",
+        "android_client_info": {
+          "package_name": "com.example.ucare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693906359257-0erjdt68oq8l5n7nfnrfdc5sncdctbt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANp7k1nnL2YZ8xyHwSCON6EmiqXYgEJQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693906359257-0erjdt68oq8l5n7nfnrfdc5sncdctbt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

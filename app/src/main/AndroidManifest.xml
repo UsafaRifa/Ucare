@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ucare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ucare">
+        <activity android:name=".forgetpass"></activity>
+        <activity android:name=".RetrievePDF" />
+        <activity android:name=".med_pdf" />
+        <activity android:name=".bleed" />
+        <activity android:name=".chocking" />
+        <activity android:name=".corona" />
+        <activity android:name=".shock" />
+        <activity android:name=".bandage" />
+        <activity android:name=".burn" />
+        <activity android:name=".poisoning" />
+        <activity android:name=".fracture" />
+        <activity android:name=".stroke" />
+        <activity android:name=".heartAttack" />
+        <activity android:name=".profile_user" />
+        <activity android:name=".firstAid_main" />
+        <activity android:name=".splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login" />
+        <activity android:name=".sign_in" />
+        <activity android:name=".bmiactivity" />
+        <activity android:name=".bmi_calculator" />
+        <activity android:name=".MainActivity" /> <!-- activity related medicine remainder -->
+        <activity android:name=".medicine.MedicineActivity" />
+        <activity android:name=".addmedicine.AddMedicineActivity" />
+        <activity android:name=".alarm.ReminderActivity" />
+        <activity android:name=".report.MonthlyReportActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:paddingTop="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    tools:context=".MainActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/layout_round">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_pic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:src="@drawable/person_icon" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/user_pic"
+                    android:paddingLeft="5dp"
+                    android:text="Shakib Al Hassan"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_occupation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_name"
+                    android:layout_toRightOf="@id/user_pic"
+                    android:paddingLeft="5dp"
+                    android:text="Athlete"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/mainpg_icon"
+                    android:padding="25dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/bmi"
+                    android:onClick="bmiCalculate"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/mainpg_icon"
+                    android:padding="25dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/pillremainder"
+                    android:onClick="pill_remainder"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@color/mainpg_icon"
+                    android:padding="25dp"
+                    android:onClick="user_profile"
+                    android:src="@drawable/blog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@color/mainpg_icon"
+                    android:padding="25dp"
+                    android:src="@drawable/medicalhistory"
+                    android:onClick="pdf"
+
+                    />
+
+                <ImageView
+                    android:layout_width="114dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/mainpg_icon"
+                    android:padding="25dp"
+                    android:src="@drawable/diet"
+
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@color/mainpg_icon"
+                    android:padding="25dp"
+                    android:src="@drawable/firstaid"
+
+                    android:onClick="FirstAid"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        app:maxImageSize="50dp"
+        android:backgroundTint="@color/white"
+        app:layout_anchor="@id/bottomBar"
+        android:onClick="homeOnClick"/>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bottomBG"
+        app:backgroundTint="@color/bottomBG"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="10dp" >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/BottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="20dp"
+
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"/>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

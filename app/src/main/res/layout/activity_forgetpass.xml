@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forgetpass">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDE7F8"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Forgot Password"
+            android:textAlignment="center"
+            android:textColor="#fe5b52"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+
+            android:textColor="#7868e5"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/forEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/backgroundedit"
+            android:ems="10"
+            android:hint="Enter Your Email"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColor="#404040"
+            android:textSize="17dp"
+
+
+            >
+
+        </EditText>
+
+
+
+        <Button
+            android:id="@+id/forgot"
+            android:layout_width="105dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="false"
+
+            android:text="Recover" />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

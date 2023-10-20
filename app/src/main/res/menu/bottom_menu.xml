@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/account"
+        android:title="Account"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_account"/>
+    <item
+        android:id="@+id/holder"
+        android:title=""
+        app:showAsAction="ifRoom"
+        android:enabled="false"/>
+    <item
+        android:id="@+id/activity"
+        android:title="Activity"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/activity"/>
+
+
+</menu>

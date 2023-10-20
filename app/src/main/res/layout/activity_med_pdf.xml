@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/purple"
+    tools:context=".med_pdf"
+
+    >
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textColor="#FFF"
+                android:text="Medical Record"
+                android:textStyle="bold"
+
+                >
+
+            </TextView>
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+
+                >
+
+            </ImageView>
+
+
+
+        </RelativeLayout>
+        <!-- <EditText
+
+           android:id="@+id/editText"
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+
+           android:hint="Select file from Storage"
+           android:inputType="textPersonName"
+
+           android:textColor="#404040"
+           android:textStyle="bold"
+
+           android:textSize="17dp">
+
+       </EditText>-->
+
+         <EditText
+
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/backgroundedit"
+            android:ems="10"
+            android:hint="Select file from Storage"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColor="#404040"
+            android:textStyle="bold"
+
+            android:textSize="17dp">
+
+        </EditText>
+
+
+
+         <!--<androidx.constraintlayout.widget.ConstraintLayout
+             android:id="@+id/upload"
+             android:layout_width="200dp"
+             android:layout_marginTop="16dp"
+             android:layout_gravity="center"
+             android:background="@drawable/signinbtn"
+             android:layout_height="50dp">
+
+             <TextView
+                 android:id="@+id/textView5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Upload File"
+                 android:textSize="25dp"
+
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+
+                 android:textStyle="bold"
+
+                 />
+
+
+         </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+        <android.widget.Button
+
+            android:id="@+id/upload"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button"
+            android:text="Upload "
+            android:textSize="20dp"
+            />
+        <android.widget.Button
+
+            android:id="@+id/btnRead"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button"
+            android:text="Retrieve PDF File"
+            android:textSize="20dp"
+            android:onClick="retrive"
+
+
+
+
+             />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
